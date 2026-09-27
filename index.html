@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Ambient Screen</title>
+<style>
+  :root{
+    --bg:#0b0b14; --panel:#15151f; --panel-2:#1a1a2e; --text:#f5f2ff;
+    --text-dim:#a9a8b8; --accent:#b6e3ff; --cream:#ffe9c7;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--text);
+    font-family:-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;
+    line-height:1.6;}
+  .wrap{max-width:1040px;margin:0 auto;padding:0 20px;}
+  header.hero{padding:64px 0 40px;text-align:center;}
+  .icon{width:96px;height:96px;border-radius:24px;box-shadow:0 12px 40px rgba(0,0,0,.5);}
+  h1{font-size:2.2rem;margin:20px 0 8px;}
+  .tagline{color:var(--text-dim);font-size:1.15rem;max-width:520px;margin:0 auto;}
+  .badges{display:flex;gap:10px;justify-content:center;flex-wrap:wrap;margin:22px 0 8px;}
+  .badge{background:var(--panel-2);color:var(--accent);border-radius:999px;
+    padding:6px 14px;font-size:.85rem;}
+  .cta{margin-top:26px;}
+  .btn{display:inline-block;background:var(--panel-2);color:#666;border:1px solid #2a2a3d;
+    padding:14px 28px;border-radius:12px;font-weight:600;text-decoration:none;
+    cursor:not-allowed;}
+  .btn-note{color:var(--text-dim);font-size:.8rem;margin-top:8px;}
+  section{padding:40px 0;}
+  h2{font-size:1.5rem;text-align:center;margin-bottom:28px;}
+  .shots{display:flex;gap:18px;justify-content:center;flex-wrap:wrap;}
+  .shots img{width:220px;max-width:42vw;border-radius:18px;
+    box-shadow:0 16px 40px rgba(0,0,0,.45);display:block;}
+  .features{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:18px;}
+  .card{background:var(--panel);border:1px solid #22222f;border-radius:16px;padding:22px;}
+  .card h3{margin:0 0 8px;font-size:1.05rem;color:var(--accent);}
+  .card p{margin:0;color:var(--text-dim);font-size:.92rem;}
+  footer{padding:40px 0 60px;text-align:center;color:var(--text-dim);font-size:.85rem;}
+  footer a{color:var(--accent);text-decoration:none;}
+  .links{display:flex;gap:18px;justify-content:center;margin-bottom:14px;flex-wrap:wrap;}
+</style>
+</head>
+<body>
+  <header class="hero">
+    <div class="wrap">
+      <img class="icon" src="assets/icon.png" alt="Ambient Screen app icon">
+      <h1>Ambient Screen</h1>
+      <p class="tagline">10 looping ambient video scenes for sleep, focus, and calm - built into the app, no ads, no account.</p>
+      <div class="badges">
+        <span class="badge">Plays without internet</span>
+        <span class="badge">No ads</span>
+        <span class="badge">No sign-up</span>
+        <span class="badge">Built-in sleep timer</span>
+      </div>
+      <div class="cta">
+        <!-- PLAY_STORE_URL: once the listing is public, set href to
+             https://play.google.com/store/apps/details?id=com.micutsoft.AmbientScreenDisplay
+             and remove the onclick/aria-disabled attributes and the note below. -->
+        <a class="btn" href="#" onclick="return false;" aria-disabled="true">Get it on Google Play (coming soon)</a>
+        <div class="btn-note">PLAY_STORE_URL - update once the listing is live</div>
+      </div>
+    </div>
+  </header>
+
+  <section class="wrap">
+    <h2>See it in action</h2>
+    <div class="shots">
+      <img src="assets/screenshot-home.jpg" alt="Home screen showing the 10 ambient theme thumbnails">
+      <img src="assets/screenshot-player.jpg" alt="Full-screen Campfire ambient video with playback controls">
+      <img src="assets/screenshot-timer.jpg" alt="Sleep timer options: 30 minutes, 1 hour, 3 hours, Unlimited">
+    </div>
+  </section>
+
+  <section class="wrap">
+    <h2>Why people use it</h2>
+    <div class="features">
+      <div class="card">
+        <h3>10 ambient scenes</h3>
+        <p>Candlelight, Campfire, Night Sky, Rainy Cafe, Ocean Sunset, Coffee Time, Autumn Forest, Starry Sky, Romantic Mood, Healing Garden - all bundled with the app.</p>
+      </div>
+      <div class="card">
+        <h3>Built-in sleep timer</h3>
+        <p>Pick 30 minutes, 1 hour, 3 hours, or Unlimited. Playback stops and returns home automatically when time's up.</p>
+      </div>
+      <div class="card">
+        <h3>Plays without internet</h3>
+        <p>Every scene is built into the app, so playback works in airplane mode too. No sign-up, no ads, and no permission prompts.</p>
+      </div>
+      <div class="card">
+        <h3>Distraction-free</h3>
+        <p>Tap to show controls, they fade away on their own, and the screen stays awake while a scene plays.</p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="wrap">
+      <div class="links">
+        <a href="privacy.html">Privacy Policy</a>
+        <a href="terms.html">Terms of Use</a>
+        <a href="support.html">Support</a>
+      </div>
+      &copy; 2026 Micutsoft &middot; Ambient Screen &middot; <a href="mailto:lsb.studio2@gmail.com">lsb.studio2@gmail.com</a>
+    </div>
+  </footer>
+</body>
+</html>
